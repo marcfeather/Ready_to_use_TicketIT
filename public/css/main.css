@@ -1,0 +1,26 @@
+/* Image + Logo navbar */
+.navbar-brand { float: none !important;}
+#img_logo { padding: 2px 2px; width: 50px;}
+
+/* Login form */
+.center{text-align: center;}
+.padding-loginForm{padding-top: 50px;}
+
+/* Display buttons Users configuration */
+.margin-right-button{margin-right: 25px;}
+
+/* No text-decoration on links */
+a.lien_simple{text-decoration: none !important;}
+
+/* Informations HomePage */
+.lien_spoiler span{margin-right: 10px;}
+.bg-spoiler {padding: 15px; margin: 10px; border-radius: 5px;}
+
+/* Return button (Send password mail) */
+.return_link {margin-bottom: 20px !important; margin-top: 10px !important;}
+
+/* Recaptcha */
+.g-recaptcha {margin: 10px 29px 15px 29px;}
+
+/* Errors blocks */
+#help-block{color:#a94442 !important;}
