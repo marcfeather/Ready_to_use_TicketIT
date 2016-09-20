@@ -1,26 +1,56 @@
 # Ready To Use TicketIT
-[![Build Status]]
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+This project is a ticket management website based on the TicketIt project's - Optimized for the French and English language.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Based on the version 0.2.9 of package [TicketIt](https://github.com/thekordy/ticketit), this project works independently.
 
-## Official Documentation
+Supplied with a database, this project is ready for use.
+A minimal configuration is required for its functioning (see setup project)
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+--> Please not update dependences <--
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## Setup Project
 
-## Security Vulnerabilities
+### General configuration
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+1 - Download and place your files in your directory (localhost or online)
+2 - Configure your file .env with the SMTP and the database informations.
+3 - Import the script contained in the 'database' folder in your PhpMyAdmin (for example)
+4 - Run your project with your URL (example : 'localhost/your_project/public/')
+
+--> Your project must be now operational !
+
+### Recaptcha
+
+--> However the recaptcha is not required for the connection !
+--> To activate Recaptcha, please inform your public key in the file '/resources/views/auth/login.blade.php' in data-sitekey='your_public_site_key' 
+--> It's possible that your Recaptcha does not work in localhost configuration
+
+### Emails
+
+--> After your SMTP configuration, your emails should send.
+--> To customize your fields subject in emails, change informations in 'resources/lang/vendor/ticketit/your_language/lang.php' and in 'app/Http/Controllers/Auth/PasswordController.php'
+--> You can personalize all of e-mails views ('resources/views/vendor/ticketit/emails/...') and more.
+
+### Customize 
+
+--> You can change the logo and the icon by replacing them here : 'public/img/'
+--> You can personalize all files (except vendor) for a precise use.
+
+## Documentation
+
+If you have difficulty, there is the main documentations :
+--> [Laravel Framework](http://laravel.com/docs).
+--> [Console Commands Artisan](https://laravel.com/docs/5.3/artisan).
+--> [TicketIT Package](https://github.com/thekordy/ticketit).
+--> [TicketIt v0.2 Features](https://github.com/thekordy/ticketit/wiki/v0.2-Features)
+
+## Problems
+
+If you have a problem, please put down a [Issue](https://github.com/WestFR/Ready_to_use_TicketIT/issues)
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+This project is licensed under [MIT license](http://opensource.org/licenses/MIT).
