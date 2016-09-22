@@ -29,7 +29,8 @@ A minimal configuration is required for its functioning (see setup project)
 
 --> However the recaptcha is not required for the connection !
 
---> To activate Recaptcha, please inform your public key in the file '/resources/views/auth/login.blade.php' in data-sitekey='your_public_site_key' 
+--> To activate Recaptcha, please inform your public key in 
+    the file '/resources/views/auth/login.blade.php' in data-sitekey='your_public_site_key' 
 
 --> It's possible that your Recaptcha does not work in localhost configuration
 
@@ -37,7 +38,9 @@ A minimal configuration is required for its functioning (see setup project)
 
 --> After your SMTP configuration, your emails should send.
 
---> To customize your fields subject in emails, change informations in 'resources/lang/vendor/ticketit/your_language/lang.php' and in 'app/Http/Controllers/Auth/PasswordController.php'
+--> To customize your fields subject in emails, change informations 
+    in 'resources/lang/vendor/ticketit/your_language/lang.php' 
+    and in 'app/Http/Controllers/Auth/PasswordController.php'
 
 --> You can personalize all of e-mails views ('resources/views/vendor/ticketit/emails/...') and more.
 
@@ -45,7 +48,7 @@ A minimal configuration is required for its functioning (see setup project)
 
 --> You can change the logo and the icon by replacing them here : 'public/img/'
 
---> You can personalize all files (except vendor) for a precise use.
+--> You can personalize all files (except vendor folder) for a precise use.
 
 ## Documentation
 
@@ -57,11 +60,11 @@ If you have difficulty, there is the main documentations :
 
 --> [TicketIT Package](https://github.com/thekordy/ticketit).
 
---> [TicketIt v0.2 Features](https://github.com/thekordy/ticketit/wiki/v0.2-Features)
+--> [TicketIt v0.2 Features](https://github.com/thekordy/ticketit/wiki/v0.2-Features).
 
 ## Problems
 
-If you have a problem, please put down a [Issue](https://github.com/WestFR/Ready_to_use_TicketIT/issues)
+If you have a problem, please put down a [Issue](https://github.com/WestFR/Ready_to_use_TicketIT/issues).
 
 
 ## License
