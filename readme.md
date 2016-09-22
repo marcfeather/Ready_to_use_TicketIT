@@ -23,7 +23,7 @@ A minimal configuration is required for its functioning (see setup project)
 
 4 - Run your project with your URL (example : 'localhost/your_project/public/')
 
-5 - Change the language in 'config/app.php' with 'locale' fields (ex 'locale' => 'en')
+5 - Change the language in 'config/app.php' with 'locale' fields (ex 'locale' => 'en')<br />
     If you choose 'en', the views are not translated in English (but in French).
 
 --> Your project must be now operational !
@@ -32,7 +32,7 @@ A minimal configuration is required for its functioning (see setup project)
 
 --> However the recaptcha is not required for the connection !
 
---> To activate Recaptcha, please inform your public key in 
+--> To activate Recaptcha, please inform your public key in<br /> 
     the file '/resources/views/auth/login.blade.php' in data-sitekey='your_public_site_key' 
 
 --> It's possible that your Recaptcha does not work in localhost configuration
@@ -41,8 +41,8 @@ A minimal configuration is required for its functioning (see setup project)
 
 --> After your SMTP configuration, your emails should send.
 
---> To customize your fields subject in emails, change informations 
-    in 'resources/lang/vendor/ticketit/your_language/lang.php' 
+--> To customize your fields subject in emails, change informations<br /> 
+    in 'resources/lang/vendor/ticketit/your_language/lang.php'<br /> 
     and in 'app/Http/Controllers/Auth/PasswordController.php'
 
 --> You can personalize all of e-mails views ('resources/views/vendor/ticketit/emails/...') and more.
