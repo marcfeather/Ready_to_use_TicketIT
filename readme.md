@@ -17,14 +17,14 @@ A minimal configuration is required for its functioning (see setup project)
 
 1 - Download and place your files in your directory (localhost or online)
 
-2 - Configure your file **.env** with the SMTP and the database informations.
+2 - Configure your file .env with the SMTP and the database informations.
 
-3 - Import the script contained in the **'database'** folder in your PhpMyAdmin (for example)
+3 - Import the script contained in the 'database' folder in your PhpMyAdmin (for example)
 
-4 - Run your project with your URL (example : **'localhost/your_project/public/'**)
+4 - Run your project with your URL (example : 'localhost/your_project/public/')
 
-5 - Change the language in **'config/app.php'** with 'locale' fields **(ex : 'locale' => 'en')**<br />
-    **If you choose 'en', the views are not translated in English (but in French).**
+5 - Change the language in 'config/app.php' with 'locale' fields (ex 'locale' => 'en')<br />
+    If you choose 'en', the views are not translated in English (but in French).
 
 --> Your project must be now operational !
 
@@ -33,17 +33,17 @@ A minimal configuration is required for its functioning (see setup project)
 --> However the recaptcha is not required for the connection !
 
 --> To activate Recaptcha, please inform your public key in<br /> 
-    the file **'/resources/views/auth/login.blade.php'** in **data-sitekey='your_public_site_key'**. 
+    the file '/resources/views/auth/login.blade.php' in data-sitekey='your_public_site_key' 
 
---> It's possible that your Recaptcha does not work in localhost configuration.
+--> It's possible that your Recaptcha does not work in localhost configuration
 
 ### Emails
 
 --> After your SMTP configuration, your emails should send.
 
 --> To customize your fields subject in emails, change informations<br /> 
-    in **'resources/lang/vendor/ticketit/your_language/lang.php'**<br /> 
-    and in **'app/Http/Controllers/Auth/PasswordController.php'**
+    in 'resources/lang/vendor/ticketit/your_language/lang.php'<br />
+    and in 'app/Http/Controllers/Auth/PasswordController.php'
 
 --> You can personalize all of e-mails views ('resources/views/vendor/ticketit/emails/...') and more.
 
