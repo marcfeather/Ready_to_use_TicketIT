@@ -23,6 +23,9 @@ A minimal configuration is required for its functioning (see setup project)
 
 4 - Run your project with your URL (example : 'localhost/your_project/public/')
 
+5 - Change the language in 'config/app.php' with 'locale' fields (ex 'locale' => 'en')
+    If you choose 'en', the views are not translated in English (but in French).
+
 --> Your project must be now operational !
 
 ### Recaptcha
