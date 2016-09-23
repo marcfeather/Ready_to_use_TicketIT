@@ -4,7 +4,7 @@
 
 /* Login form */
 .center{text-align: center;}
-.padding-loginForm{padding-top: 50px;}
+.padding-loginForm{padding-top: 40px;}
 
 /* Display buttons Users configuration */
 .margin-right-button{margin-right: 25px;}
@@ -19,8 +19,11 @@ a.lien_simple{text-decoration: none !important;}
 /* Return button (Send password mail) */
 .return_link {margin-bottom: 20px !important; margin-top: 10px !important;}
 
-/* Recaptcha */
-.g-recaptcha {margin: 10px 29px 15px 29px;}
-
 /* Errors blocks */
 #help-block{color:#a94442 !important;}
+
+/* Center & Responsive reCAPTCHA in LoginPage*/ 
+.g-recaptcha div {width: 100% !important;}
+
+/* Marge à droite îcone */
+.glyphicon{margin-right: 10px;}

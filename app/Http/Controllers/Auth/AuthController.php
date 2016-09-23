@@ -109,4 +109,14 @@ class AuthController extends Controller
     return redirect('tickets-admin/users');
     }
 
+     /**
+       * Enabled reCAPTCHA required rules in validatorLogin
+       *
+       * @param  \Illuminate\Http\Request  $request
+       * @return \Illuminate\Http\Response
+       */
+        protected function validateLogin(\Illuminate\Http\Request $request)
+        {  
+            $this->validate($request, [$this->loginUsername() => 'required', 'password' => 'required',/*'g-recaptcha-response' => 'required',*/]);
+        }
 }

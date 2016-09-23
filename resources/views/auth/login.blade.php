@@ -43,6 +43,15 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4 center">
+                                <div class="g-recaptcha" data-sitekey='your_public_site_key'>
+                                </div>
+
+                                @if ($errors->has('g-recaptcha-response'))
+                                <span id="help-block" class="help-block">
+                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                </span>
+                                @endif
+
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox" name="remember"> Se souvenir de moi
@@ -53,21 +62,14 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4 center">
-                                <div class="g-recaptcha" data-sitekey='your_public_site_key'>
-                                </div>
-
-                                @if ($errors->has('g-recaptcha-response'))
-                                <span id="help-block" class="help-block">
-                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                                </span>
-                                @endif
-
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fa fa-btn fa-sign-in"></i> Connexion
                                 </button>
                             </div>
                         </div>
+
                     </form>
+
                     <p class="col-md-6 col-md-offset-4 center padding-loginForm">Cliquez ici pour revenir sur notre site : </br>
                             <a class="lien_simple" href="#" target="_blank">Society Name</a>
                     </p>
@@ -76,6 +78,8 @@
                     <b>Utilisateur test :</b> test1@example.fr</br>
                     <b>Mot de passe :</b> 123456
                     </p>
+        </div>
     </div>
 </div>
 @endsection
+
