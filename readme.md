@@ -30,11 +30,11 @@ A minimal configuration is required for its functioning (see setup project)
 
 ### Recaptcha
 
---> However the recaptcha is not required for the connection !
+--> However the recaptcha is not required for the connection !<br /> 
 --> It's possible that your Recaptcha does not work in localhost configuration.
 
-You have two steps for activate your Recaptcha : 
-1 - Inform your public key in the file '/resources/views/auth/login.blade.php' (data-sitekey='your_public_site_key')
+You have two steps for activate your Recaptcha :<br />  
+1 - Inform your public key in the file '/resources/views/auth/login.blade.php' (data-sitekey='your_public_site_key')<br /> 
 2 - Uncomment /*'g-recaptcha-response' => 'required',*/ in '/app/Http/Controllers/Auth/AuthController.php'
 
 -> Now, your Recaptcha is required and it work !
