@@ -4,6 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+                    <a class="btn btn-primary return_link" href="{{ url('tickets-admin/users') }}"><span class="glyphicon glyphicon-chevron-left"></span>Retour</a>
             <div class="panel panel-default">
                 <div class="panel-heading">Création utilisateur</div>
                 <div class="panel-body">
